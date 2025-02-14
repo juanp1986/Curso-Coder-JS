@@ -1,0 +1,255 @@
+body {
+
+    background:linear-gradient(45deg,#FAF3E0,#E0C097);
+}
+
+#cardsAmerica {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+
+}
+
+.bodyCard {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 300px;
+    gap: 5px;
+    margin: 5px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    color: black;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.titleCard {
+
+    background-color: antiquewhite;
+    color: black;
+    font-family: "Barrio", serif;
+    font-size: 22px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #D5B19D;
+    padding: 8px;
+    justify-items: center;
+
+}
+
+.boton1, .boton2, .boton3 {
+
+    padding: 8px;
+    background-color: #F1E0C6;
+    color: black;
+    border: 2px solid #D5B19D;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+    font-family: "poppins", serif;
+    font-size: 14px;
+
+}
+
+.boton1:hover, .boton2:hover , .boton3:hover {
+
+    transform: scale(1.1);
+    transition: 1.4 ease;
+    background-color: #D5B19D;
+    color: #7A1E1E;
+
+}
+
+.botonCorrecto {
+
+    padding: 8px;
+    background-color: green;
+    color: antiquewhite;
+    border-radius: 5px;
+    width: 200px;
+    font-family: "poppins", serif;
+    font-size: 14px;
+    
+}
+
+.botonIncorrecto {
+
+    padding: 8px;
+    background-color: red;
+    color: antiquewhite;
+    border-radius: 5px;
+    width: 200px;
+    font-family: "poppins", serif;
+    font-size: 14px;
+}
+
+.botonAgregado {
+
+    padding: 8px;
+    background-color: antiquewhite;
+    color: gray;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 200px;
+    font-family: "poppins", serif;
+    font-size: 14px;
+
+}
+
+.botonesTransparentes {
+
+    opacity: 0.7;
+
+}
+
+.puntajeAmerica {
+    
+    align-content: center;
+    justify-items: center;
+    width: 80%;
+    height: 200px;
+    border-radius: 25px;
+    background-color: #D5B19D;
+    color: #7A1E1E;
+    border: 2px solid #F1E0C6;
+
+}
+
+.puntajeAmerica p {
+
+    font-family: "Barrio", serif;
+    font-size: 40px;
+    
+}
+
+.dark {
+
+    background: linear-gradient(45deg, #1A1A1A, #000);
+    
+}
+
+.grilla {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.tituloPrincipal {
+
+    justify-items: center;
+} 
+
+h1 {
+
+    font-family: "Barrio", serif;
+    font-size: 40px;
+    color: #7A1E1E;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+
+    background-color: #7A1E1E;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.final {
+
+    background-color: #7A1E1E;
+    justify-items: center;
+}
+
+.final p {
+
+    font-size: 30px;
+    font-family: "poppins", serif;
+    color: #D5B19D;
+}
+
+.casilla1 {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.div1 {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 40%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#ingresarNombre {
+
+    font-family: "poppins", serif;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid #7A1E1E;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#guardarNombre {
+
+    padding: 5px 10px;
+    background-color: #7A1E1E;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px
+}
+
+.div2 {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 60%;
+}
+
+#nombreJugador {
+
+    font-family: "Barrio", serif;
+    font-size: 30px;
+    color: #7A1E1E;
+}
+
+.casilla3 {
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#botonModoOscuro {
+    
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background:linear-gradient(45deg, #7A1E1E, rgba(248, 106, 106, 0.753));
+    box-shadow: 0 0 6px rgba(248, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5);
+    border: 2px solid #FFD700;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#botonModoOscuro:hover {
+
+    transform: scale(1.1);
+}
