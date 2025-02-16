@@ -14,6 +14,22 @@ if (localStorage.getItem ("darkMode") === "true") {
     darkMode.textContent = "🌞";
 }
 
+window.addEventListener("storage", function(event) {
+
+    if (event.newValue === "true") {
+
+        body.classList.add("dark");
+        darkMode.classList.add("botonModoOscuro");
+        darkMode.textContent = "🌙";
+        
+    } else {
+
+        body.classList.remove("dark");
+        darkMode.classList.remove("botonModoOscuro");
+        darkMode.textContent = "🌞";
+    }
+});
+
 darkMode.addEventListener("click", function() {
     
     body.classList.toggle("dark");
