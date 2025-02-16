@@ -3,7 +3,7 @@ body {
     background:linear-gradient(45deg,#FAF3E0,#E0C097);
 }
 
-#cardsAmerica {
+#cardsAmerica, #cardsEuropa, #cardsAsia {
 
     display: flex;
     flex-direction: row;
@@ -33,10 +33,11 @@ body {
 
 .titleCard {
 
-    background-color: antiquewhite;
-    color: black;
+    background: linear-gradient(45deg,#FAF3E0,#D5B19D);
+    color: #7A1E1E;
     font-family: "Barrio", serif;
     font-size: 22px;
+    font-weight: 400;
     width: 200px;
     border-radius: 5px;
     border: 2px solid #D5B19D;
@@ -110,7 +111,7 @@ body {
 
 }
 
-.puntajeAmerica {
+.puntajeAmerica, .puntajeEuropa, .puntajeAsia {
     
     align-content: center;
     justify-items: center;
@@ -126,8 +127,17 @@ body {
 .puntajeAmerica p {
 
     font-family: "Barrio", serif;
+    font-size: 40px;    
+}
+.puntajeEuropa p {
+
+    font-family: "Barrio", serif;
     font-size: 40px;
-    
+}
+.puntajeAsia p {
+
+    font-family: "Barrio", serif;
+    font-size: 40px;
 }
 
 .dark {
@@ -252,4 +262,56 @@ h1 {
 #botonModoOscuro:hover {
 
     transform: scale(1.1);
+}
+#botoneraMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 10px;
+}
+.continentes {
+
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 50, 0.8);
+    border-radius: 50%;
+    height: 700px;
+}
+.americaFondo {
+    
+    background-image: url("/images/ContinenteAmericano.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.europaFondo {
+    
+    background-image: url("/images/ContinenteEuropeo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.asiaFondo {
+    
+    background-image: url("/images/ContinenteAsiatico.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.botonesMain {
+    
+    font-family: "Barrio", serif;
+    font-size: 24px;
+    font-weight: 500;
+    height: 60px;
+    width: 150px;
+    padding: 5px 10px;
+    margin-top: 45px;
+    background: linear-gradient(45deg,#FAF3E0,#D5B19D);
+    color: #7A1E1E;
+    border: 2px solid #D5B19D;
+    box-shadow: 4px 4px 10px rgba(0, 0, 50, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botonesMain:hover {
+
+    transform: scale(1.2);
 }
