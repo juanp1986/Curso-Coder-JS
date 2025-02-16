@@ -239,30 +239,39 @@ h1 {
     color: #7A1E1E;
 }
 
-.casilla3 {
-
+.casilla1, .casilla3, .tituloPrincipal {
     display: flex;
-    justify-content: right;
     align-items: center;
+    justify-content: center;
 }
 
-#botonModoOscuro {
-    
-    width: 100px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 4px;
+.botonModoClaro {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
     background:linear-gradient(45deg, #7A1E1E, rgba(248, 106, 106, 0.753));
     box-shadow: 0 0 6px rgba(248, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5);
     border: 2px solid #FFD700;
-    font-size: 25px;
     cursor: pointer;
+    font-size: 35px;
+    border-radius: 50%;
 }
 
-#botonModoOscuro:hover {
+.botonModoClaro:hover {
 
     transform: scale(1.1);
 }
+
+.botonModoOscuro {
+    
+    background:linear-gradient(45deg, #0401c9, rgba(5, 134, 209, 0.753));
+    box-shadow: 0 0 6px rgba(3, 146, 241, 0.7), 0 0 10px rgba(3, 98, 223, 0.5);
+    border: 2px solid beige;
+}
+
 #botoneraMain {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -279,19 +288,19 @@ h1 {
 }
 .americaFondo {
     
-    background-image: url("../images/ContinenteAmericano.svg");
+    background-image: url("/Curso-Coder-JS/images/ContinenteAmericano.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .europaFondo {
     
-    background-image: url("../images/ContinenteEuropeo.webp");
+    background-image: url("/Curso-Coder-JS/images/ContinenteEuropeo.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .asiaFondo {
     
-    background-image: url("../images/ContinenteAsiatico.png");
+    background-image: url("/Curso-Coder-JS/images/ContinenteAsiatico.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

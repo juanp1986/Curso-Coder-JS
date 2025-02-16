@@ -4,15 +4,15 @@ let Asia = document.getElementById("asia");
 
 America.addEventListener("click", function(){
     
-    window.open ("../html/america.html", "_blank");
+    window.open ("/Curso-Coder-JS/html/america.html", "_blank");
 })
 
 Europa.addEventListener("click", function(){
 
-    window.open ("../html/europa.html", "_blank");
+    window.open ("/Curso-Coder-JS/europa.html", "_blank");
 })
 
 Asia.addEventListener("click", function(){
 
-    window.open ("../html/asia.html", "_blank");
+    window.open ("/Curso-Coder-JS/asia.html", "_blank");
 })
