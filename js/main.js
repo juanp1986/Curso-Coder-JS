@@ -9,10 +9,10 @@ America.addEventListener("click", function(){
 
 Europa.addEventListener("click", function(){
 
-    window.open ("/Curso-Coder-JS/europa.html", "_blank");
+    window.open ("/Curso-Coder-JS/html/europa.html", "_blank");
 })
 
 Asia.addEventListener("click", function(){
 
-    window.open ("/Curso-Coder-JS/asia.html", "_blank");
+    window.open ("/Curso-Coder-JS/html/asia.html", "_blank");
 })
