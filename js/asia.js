@@ -317,3 +317,18 @@ function respuestasContinente () {
 }
 
 respuestasContinente();
+
+const titulo = "Asia";
+let index = 0 ;
+
+function mostrarLetras () {
+
+    if (index < titulo.length) {
+
+        document.getElementById("asia").textContent += titulo[index];
+        index++;
+        setTimeout(mostrarLetras,100)
+    }
+}
+
+mostrarLetras();

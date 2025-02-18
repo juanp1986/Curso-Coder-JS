@@ -317,3 +317,18 @@ function respuestasContinente () {
 }
 
 respuestasContinente();
+
+const titulo = "Europa";
+let index = 0 ;
+
+function mostrarLetras () {
+
+    if (index < titulo.length) {
+
+        document.getElementById("europa").textContent += titulo[index];
+        index++;
+        setTimeout(mostrarLetras,100)
+    }
+}
+
+mostrarLetras();
