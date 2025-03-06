@@ -8,7 +8,7 @@ let paisesAsia = [];
 async function cargarDatos() {
 
     try {
-        const response = await fetch("/src/data/continenteAsia.json");
+        const response = await fetch("/Curso-Coder-JS/src/data/continenteAsia.json");
         paisesAsia = await response.json();
     
         agregarPaises();
