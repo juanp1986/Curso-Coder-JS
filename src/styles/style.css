@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Barrio";
-  src: url("/src/assets/fonts/Barrio-Regular.ttf") format("truetype");
+  src: url("/Curso-Coder-JS/src/assets/fonts/Barrio-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("/src/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("/Curso-Coder-JS/src/assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("/src/assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("/Curso-Coder-JS/src/assets/fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("/src/assets/fonts/Poppins-Italic.ttf") format("truetype");
+  src: url("/Curso-Coder-JS/src/assets/fonts/Poppins-Italic.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -41,19 +41,19 @@
 }
 
 .americaFondo {
-  background-image: url("/src/assets/images/ContinenteAmericano.svg");
+  background-image: url("/Curso-Coder-JS/src/assets/images/ContinenteAmericano.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .europaFondo {
-  background-image: url("/src/assets/images/ContinenteEuropeo.webp");
+  background-image: url("/Curso-Coder-JS/src/assets/images/ContinenteEuropeo.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .asiaFondo {
-  background-image: url("/src/assets/images/ContinenteAsiatico.png");
+  background-image: url("/Curso-Coder-JS/src/assets/images/ContinenteAsiatico.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
