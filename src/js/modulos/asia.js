@@ -244,7 +244,7 @@ function respuestasContinente () {
                 Swal.fire( {
                     
                     title: `Conseguiste ${respuestasCorrectasAsia} respuestas correctas`,
-                    imageUrl: "/src/assets/images/imagenPuntaje.png",
+                    imageUrl: "/Curso-Coder-JS/src/assets/images/imagenPuntaje.png",
                     background: "transparent",
                     color: "#BFBFBF",
                     confirmButtonText:"Continuar",
