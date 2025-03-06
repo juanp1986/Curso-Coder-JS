@@ -1,0 +1,19 @@
+.footer {
+
+    @include flexCentrado (flex,center,center);
+    background-color: $color5;
+    height: 90px;
+    margin-top: 50px;
+}
+
+.final {
+
+    background-color: $color5;
+    justify-items: center;
+}
+
+.final p {
+
+    @include fuente (poppins,24px);
+    color: $color4;
+}

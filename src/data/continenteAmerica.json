@@ -1,0 +1,74 @@
+[
+    
+    {
+        "imagen": "../src/assets/images/Argentina.webp",
+        "nombre": "Argentina",
+        "capital": "Buenos Aires",
+        "ciudad1": "Rosario",
+        "ciudad2": "Cordoba"
+    },
+    {   
+        "imagen": "../src/assets/images/brasil.png",
+        "nombre": "Brasil",
+        "ciudad1": "Rio de Janeiro",
+        "capital": "Brasilia",
+        "ciudad2": "Sao Paulo"
+    },
+    {   
+        "imagen": "../src/assets/images/Colombia.avif",
+        "nombre": "Colombia",
+        "ciudad1": "Barranquilla",
+        "ciudad2": "Medellin",
+        "capital": "Bogota"
+    },
+    {   
+        "imagen":"../src/assets/images/Chile.jpg",
+        "nombre": "Chile",
+        "ciudad1": "Iquique",
+        "ciudad2": "Punta Arenas",
+        "capital": "Santiago de Chile"
+    },
+    {
+        "imagen":"../src/assets/images/Mexico.png",
+        "nombre": "Mexico",
+        "ciudad1": "Monterrey",
+        "capital": "Ciudad de Mexico",
+        "ciudad2": "Guadalajara"
+    },
+    {
+        "imagen":"../src/assets/images/Estados-Unidos.webp",
+        "nombre": "Estados Unidos",
+        "capital": "Washington",
+        "ciudad1": "Nueva York",
+        "ciudad2": "Los Angeles"
+    },
+    {
+        "imagen":"../src/assets/images/Canada.webp",
+        "nombre": "Canada",
+        "ciudad1": "Vancouver",
+        "ciudad2": "Montreal",
+        "capital": "Ottawa"
+    },
+    {
+        "imagen": "../src/assets/images/Guatemala.png",
+        "nombre": "Guatemala",
+        "ciudad1": "Quetzaltenango",
+        "capital": "Ciudad de Guatemala",
+        "ciudad2": "Mixco"
+    },
+    {
+        "imagen":"../src/assets/images/Cuba.svg",
+        "nombre": "Cuba",
+        "ciudad1": "Santiago de Cuba",
+        "ciudad2": "Camaguey",
+        "capital": "La Habana"
+    },
+    {
+        "imagen":"../src/assets/images/Jamaica.png",
+        "nombre": "Jamaica",
+        "capital": "Kingston",
+        "ciudad1": "Montego Bay",
+        "ciudad2": "Ocho Rios"
+    }
+    
+]

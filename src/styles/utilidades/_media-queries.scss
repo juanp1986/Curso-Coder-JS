@@ -1,0 +1,104 @@
+@media (max-width:768px) {
+
+    main {
+
+        justify-content: center;
+    }
+
+    #botoneraMain {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .continentes {
+
+        width: 60%;
+        height: 58vw;
+    }
+
+    .grilla {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        margin-left: 5px;
+    }
+
+    .casilla1 {
+
+        display: none;
+    }
+
+    h1 {
+
+        font-size: 2rem;
+    }
+    .casilla3 {
+
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .botonModoClaro {
+
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+        margin: 0 15px;
+        border: 1px solid #FFD700;
+    }
+
+    .botonModoOscuro {
+    
+        border: 1px solid $color2;
+    }
+
+    .footer {
+
+        height: 60px;
+    }
+
+    .final p {
+
+        font-size: 1rem;
+    }
+
+    .botonesMain {
+
+        height: 50px;
+        width: 100px;
+        font-size: 1.3rem;
+    }
+
+    #reglamento {
+
+        padding: 8px 16px;
+        border: 1px solid $color3;
+        font-size: 16px;
+    }
+
+    #cardsAmerica, #cardsEuropa, #cardsAsia {
+
+        flex-direction: column;
+    }
+
+    .bodyCard {
+
+        width: 90%;
+        height: 250px;
+    }
+
+    .titleCard {
+
+        padding: 2px;
+        width: 180px;
+    }
+
+    .boton1, .boton2, .boton3, .botonCorrecto, .botonIncorrecto, .botonAgregado {
+
+        @include fuente (poppins,12px);
+        @include estiloBotones (5px,6px,180px);
+    }
+}

@@ -1,0 +1,81 @@
+#cardsAmerica, #cardsEuropa, #cardsAsia {
+
+    @include flexCentrado(flex,center,center);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.bodyCard {
+
+    @include flexCentrado (flex,center,center);
+    flex-direction: column;
+    @include estiloBotones (25px,5px,40%);
+    height: 300px;
+    gap: 5px;
+    margin: 5px;
+    background-color: $color1;
+    color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.titleCard {
+
+    background: linear-gradient(45deg,$color1,$color4);
+    color: $color5;
+    @include fuente (Barrio,22px);
+    font-weight: 400;
+    @include estiloBotones (5px,8px,200px);
+    border: 2px solid $color4;
+    justify-items: center;
+}
+
+.boton1, .boton2, .boton3 {
+
+    background-color: $color2;
+    color: black;
+    @include fuente (poppins,14px);
+    @include estiloBotones (5px,8px,200px);
+    border: 2px solid $color4;
+    cursor: pointer;
+}
+
+.boton1:hover, .boton2:hover , .boton3:hover {
+
+    transform: scale(1.1);
+    transition: 1.4 ease;
+    background-color: $color4;
+    color: $color5;
+
+}
+
+.botonCorrecto {
+
+    background-color: green;
+    color: $color1;
+    @include fuente (poppins,14px);
+    @include estiloBotones (5px,8px,200px);
+}
+
+.botonIncorrecto {
+
+    background-color: red;
+    color: $color1;
+    @include fuente (poppins,14px);
+    @include estiloBotones (5px,8px,200px);
+}
+
+.botonAgregado {
+
+    background-color: $color1;
+    color: gray;
+    @include fuente (poppins,14px);
+    border: 2px solid gray;
+    @include estiloBotones (5px,8px,200px);
+}
+
+.botonesTransparentes {
+
+    opacity: 0.7;
+}

@@ -1,0 +1,74 @@
+[
+    
+    {
+        "imagen": "../src/assets/images/Alemania.png",
+        "nombre": "Alemania",
+        "capital": "Berlin",
+        "ciudad1": "Munich",
+        "ciudad2": "Hamburgo"
+    },
+    {   
+        "imagen": "../src/assets/images/Francia.svg",
+        "nombre": "Francia",
+        "ciudad1": "Marsella",
+        "capital": "Paris",
+        "ciudad2": "Lyon"
+    },
+    {   
+        "imagen":"../src/assets/images/Paises-Bajos.svg",
+        "nombre": "Paises Bajos",
+        "capital": "Amsterdam",
+        "ciudad1": "Roterdam",
+        "ciudad2": "Utrecht"
+    },
+    {   
+        "imagen":"../src/assets/images/Portugal.webp",
+        "nombre": "Portugal",
+        "ciudad1": "Braga",
+        "capital": "Lisboa",
+        "ciudad2": "Oporto"
+    },
+    {
+        "imagen":"../src/assets/images/Italia.png",
+        "nombre": "Italia",
+        "ciudad1": "Napoles",
+        "ciudad2": "Milan",
+        "capital": "Roma"
+    },
+    {
+        "imagen": "../src/assets/images/España.png",
+        "nombre": "España",
+        "ciudad1": "Barcelona",
+        "ciudad2": "Valencia",
+        "capital": "Madrid"
+    },
+    {
+        "imagen":"../src/assets/images/Belgica.png",
+        "nombre": "Belgica",
+        "ciudad1": "Amberes",
+        "ciudad2": "Brujas",
+        "capital": "Bruselas"
+    },
+    {
+        "imagen": "../src/assets/images/Noruega.webp",
+        "nombre": "Noruega",
+        "ciudad1": "Trondheim",
+        "capital": "Oslo",
+        "ciudad2": "Tromsø"
+    },
+    {
+        "imagen":"../src/assets/images/Polonia.png",
+        "nombre": "Polonia",
+        "capital": "Varsovia",
+        "ciudad1": "Cracovia",
+        "ciudad2": "Wroclaw"
+    },
+    {
+        "imagen":"../src/assets/images/Bulgaria.svg",
+        "nombre": "Bulgaria",
+        "ciudad1": "Plovdiv",
+        "ciudad2": "Varna",
+        "capital": "Sofia"
+    }
+    
+]

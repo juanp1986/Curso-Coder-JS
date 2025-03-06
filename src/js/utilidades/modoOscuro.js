@@ -16,17 +16,20 @@ if (localStorage.getItem ("darkMode") === "true") {
 
 window.addEventListener("storage", function(event) {
 
-    if (event.newValue === "true") {
-
-        body.classList.add("dark");
-        darkMode.classList.add("botonModoOscuro");
-        darkMode.textContent = "🌙";
+    if (event.key === "darkMode") {
         
-    } else {
+        if (event.newValue === "true") {
 
-        body.classList.remove("dark");
-        darkMode.classList.remove("botonModoOscuro");
-        darkMode.textContent = "🌞";
+            body.classList.add("dark");
+            darkMode.classList.add("botonModoOscuro");
+            darkMode.textContent = "🌙";
+        
+        } else {
+
+            body.classList.remove("dark");
+            darkMode.classList.remove("botonModoOscuro");
+            darkMode.textContent = "🌞";
+        }    
     }
 });
 
@@ -37,7 +40,7 @@ darkMode.addEventListener("click", function() {
 
     if (darkMode.textContent === "🌞") {
 
-        darkMode.textContent = "🌙"; 
+        darkMode.textContent = "🌙";
 
     } else {
 
@@ -54,3 +57,5 @@ darkMode.addEventListener("click", function() {
     }
 
 })
+
+

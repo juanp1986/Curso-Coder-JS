@@ -1,0 +1,19 @@
+@mixin fuente ($fuente, $size) {
+
+    font-family: $fuente;
+    font-size: $size
+}
+
+@mixin flexCentrado ($display, $justify, $align) {
+
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin estiloBotones ($border-radius, $padding, $width) {
+
+    border-radius: $border-radius;
+    padding: $padding;
+    width: $width;
+}

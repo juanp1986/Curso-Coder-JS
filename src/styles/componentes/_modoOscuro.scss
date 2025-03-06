@@ -1,0 +1,36 @@
+body {
+
+    background:linear-gradient(45deg,$color1,$color3);
+}
+
+.dark {
+
+    background: linear-gradient(45deg, #1A1A1A, #000);
+    color: $color2;
+    
+}
+
+.botonModoClaro {
+
+    @include flexCentrado (flex,center,center);
+    width: 80px;
+    height: 80px;
+    background:linear-gradient(45deg, $color5, rgba(248, 106, 106, 0.753));
+    box-shadow: 0 0 6px rgba(248, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5);
+    border: 2px solid #FFD700;
+    cursor: pointer;
+    font-size: 35px;
+    border-radius: 50%;
+}
+
+.botonModoClaro:hover {
+
+    transform: scale(1.1);
+}
+
+.botonModoOscuro {
+    
+    background:linear-gradient(45deg, #0401c9, rgba(5, 134, 209, 0.753));
+    box-shadow: 0 0 6px rgba(3, 146, 241, 0.7), 0 0 10px rgba(3, 98, 223, 0.5);
+    border: 2px solid $color2;
+}

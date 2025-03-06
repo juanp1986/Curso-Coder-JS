@@ -1,80 +1,27 @@
+import { mostrarLetras } from "../funciones/mostrarLetras.js";
+import { recuperarUsuario } from "../funciones/recuperarUsuario.js";
+
 const cardsAmerica = document.getElementById("cardsAmerica")
 
-const paisesAmerica = [
-    
-    {
-        imagen: "../images/Argentina.webp",
-        nombre: "Argentina",
-        capital: "Buenos Aires",
-        ciudad1: "Rosario",
-        ciudad2: "Cordoba"
-    },
-    {   
-        imagen: "../images/brasil.png",
-        nombre: "Brasil",
-        ciudad1: "Rio de Janeiro",
-        capital: "Brasilia",
-        ciudad2: "Sao Paulo"
-    },
-    {   
-        imagen: "../images/Colombia.avif",
-        nombre: "Colombia",
-        ciudad1: "Barranquilla",
-        ciudad2: "Medellin",
-        capital: "Bogota"
-    },
-    {   
-        imagen:"../images/Chile.jpg",
-        nombre: "Chile",
-        ciudad1: "Iquique",
-        ciudad2: "Punta Arenas",
-        capital: "Santiago de Chile"
-    },
-    {
-        imagen:"../images/Mexico.png",
-        nombre: "Mexico",
-        ciudad1: "Monterrey",
-        capital: "Ciudad de Mexico",
-        ciudad2: "Guadalajara"
-    },
-    {
-        imagen:"../images/Estados-Unidos.webp",
-        nombre: "Estados Unidos",
-        capital: "Washington",
-        ciudad1: "Nueva York",
-        ciudad2: "Los Angeles"
-    },
-    {
-        imagen:"../images/Canada.webp",
-        nombre: "Canada",
-        ciudad1: "Vancouver",
-        ciudad2: "Montreal",
-        capital: "Ottawa"
-    },
-    {
-        imagen: "../images/Guatemala.png",
-        nombre: "Guatemala",
-        ciudad1: "Quetzaltenango",
-        capital: "Ciudad de Guatemala",
-        ciudad2: "Mixco"
-    },
-    {
-        imagen:"../images/Cuba.svg",
-        nombre: "Cuba",
-        ciudad1: "Santiago de Cuba",
-        ciudad2: "Camaguey",
-        capital: "La Habana"
-    },
-    {
-        imagen:"../images/Jamaica.png",
-        nombre: "Jamaica",
-        capital: "Kingston",
-        ciudad1: "Montego Bay",
-        ciudad2: "Ocho Rios"
-    }
-    
-]
+let paisesAmerica = [];
 
+async function cargarDatos() {
+
+    try {
+        const response = await fetch("/src/data/continenteAmerica.json");
+        paisesAmerica = await response.json();
+    
+        agregarPaises();
+        respuestasContinente();
+
+    } catch (error) {
+
+        console.error("Error al cargar el archivo JSON:", error.message);
+    }
+}
+
+cargarDatos();
+    
 function agregarPaises () {
 
     let botonesCorrectosAmerica = localStorage.getItem("botonesCorrectosAmerica");
@@ -190,9 +137,6 @@ function agregarPaises () {
     });
 }
 
-agregarPaises();
-
-
 function respuestasContinente () {
 
     let botonesCorrectosAmerica = localStorage.getItem("botonesCorrectosAmerica");
@@ -297,14 +241,17 @@ function respuestasContinente () {
         
             if (parseInt(respuestasTotalesAmerica)===10) {
 
-                let puntajeAmerica = document.createElement("div");
-                puntajeAmerica.classList.add("puntajeAmerica");
-
-                let mensaje = document.createElement("p");
-                mensaje.textContent = `Tu resultado es de ${respuestasCorrectasAmerica} respuestas correctas`;
-
-                puntajeAmerica.appendChild(mensaje);
-                cardsAmerica.appendChild(puntajeAmerica);
+                Swal.fire( {
+                    
+                    title: `Conseguiste ${respuestasCorrectasAmerica} respuestas correctas`,
+                    imageUrl: "/src/assets/images/imagenPuntaje.png",
+                    background: "transparent",
+                    color: "#BFBFBF",
+                    confirmButtonText:"Continuar",
+                    confirmButtonColor:"gray",
+                    backdrop: `rgba(0, 0, 0, 0.9)`
+                    
+                });
 
                 localStorage.removeItem("botonesCorrectosAmerica");
                 localStorage.removeItem("botonesIncorrectosAmerica");
@@ -316,19 +263,6 @@ function respuestasContinente () {
     })
 }
 
-respuestasContinente();
+mostrarLetras("América", "america");
+recuperarUsuario();
 
-const titulo = "America";
-let index = 0 ;
-
-function mostrarLetras () {
-
-    if (index < titulo.length) {
-
-        document.getElementById("america").textContent += titulo[index];
-        index++;
-        setTimeout(mostrarLetras,100)
-    }
-}
-
-mostrarLetras();

@@ -28,7 +28,6 @@ body {
     color: black;
     background-size: cover;
     background-position: center;
-
 }
 
 .titleCard {
@@ -111,38 +110,10 @@ body {
 
 }
 
-.puntajeAmerica, .puntajeEuropa, .puntajeAsia {
-    
-    align-content: center;
-    justify-items: center;
-    width: 80%;
-    height: 200px;
-    border-radius: 25px;
-    background-color: #D5B19D;
-    color: #7A1E1E;
-    border: 2px solid #F1E0C6;
-
-}
-
-.puntajeAmerica p {
-
-    font-family: "Barrio", serif;
-    font-size: 40px;    
-}
-.puntajeEuropa p {
-
-    font-family: "Barrio", serif;
-    font-size: 40px;
-}
-.puntajeAsia p {
-
-    font-family: "Barrio", serif;
-    font-size: 40px;
-}
-
 .dark {
 
     background: linear-gradient(45deg, #1A1A1A, #000);
+    color: antiquewhite;
     
 }
 
@@ -192,6 +163,8 @@ h1 {
 .casilla1 {
 
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -216,11 +189,24 @@ h1 {
 }
 #guardarNombre {
 
-    padding: 5px 10px;
+    padding: 7px 14px;
     background-color: #7A1E1E;
-    color: white;
-    border-radius: 5px;
+    color: beige;
+    border-radius: 26px 58px;
+    border: 2px solid #FAF3E0;
     cursor: pointer;
+    font-family: "poppins", serif;
+    font-size: 18px
+}
+
+.player  {
+
+    padding: 3px 10px;
+    background-color: #7A1E1E;
+    border: 2px solid #FAF3E0;
+    font-family: "poppins", serif;
+    color: beige;
+    border-radius: 32px 64px 128px 32px;
     font-size: 18px
 }
 
@@ -239,10 +225,19 @@ h1 {
     color: #7A1E1E;
 }
 
-.casilla1, .casilla3, .tituloPrincipal {
+.tituloPrincipal {
+    
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.casilla3 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
 }
 
 .botonModoClaro {
@@ -272,6 +267,18 @@ h1 {
     border: 2px solid beige;
 }
 
+#reglamento {
+
+    padding: 10px 20px;
+    background-color: #7A1E1E;
+    color: beige;
+    border: 2px solid #E0C097;
+    border-radius: 26px 58px;
+    cursor: pointer;
+    font-family: "poppins", serif;
+    font-size: 18px;
+    
+}
 #botoneraMain {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -288,19 +295,19 @@ h1 {
 }
 .americaFondo {
     
-    background-image: url("/Curso-Coder-JS/images/ContinenteAmericano.svg");
+    background-image: url("/src/assets/images/ContinenteAmericano.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .europaFondo {
     
-    background-image: url("/Curso-Coder-JS/images/ContinenteEuropeo.webp");
+    background-image: url("/src/assets/images/ContinenteEuropeo.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .asiaFondo {
     
-    background-image: url("/Curso-Coder-JS/images/ContinenteAsiatico.png");
+    background-image: url("/src/assets/images/ContinenteAsiatico.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -318,9 +325,53 @@ h1 {
     border: 2px solid #D5B19D;
     box-shadow: 4px 4px 10px rgba(0, 0, 50, 0.8);
     border-radius: 5px;
+}
+
+#america {
+
     cursor: pointer;
+}
+
+#europa, #asia {
+
+    cursor: not-allowed;
 }
 .botonesMain:hover {
 
     transform: scale(1.2);
+}
+
+.lista-reglas {
+
+    text-align: left;
+    font-family: "poppins", serif;
+    
+}
+
+
+@font-face {
+    font-family: "Barrio";
+    src: url("../assets/fonts/Barrio-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins-Italic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
 }

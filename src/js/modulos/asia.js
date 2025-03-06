@@ -1,79 +1,26 @@
+import { mostrarLetras } from "../funciones/mostrarLetras.js";
+import { recuperarUsuario } from "../funciones/recuperarUsuario.js";
+
 const cardsAsia = document.getElementById("cardsAsia")
 
-const paisesAsia = [
+let paisesAsia = [];
+
+async function cargarDatos() {
+
+    try {
+        const response = await fetch("/src/data/continenteAsia.json");
+        paisesAsia = await response.json();
     
-    {
-        imagen: "../images/Corea-del-sur.webp",
-        nombre: "Corea Del Sur",
-        capital: "Seul",
-        ciudad1: "Daegu",
-        ciudad2: "Busan"
-    },
-    {   
-        imagen: "../images/China.png",
-        nombre: "China",
-        ciudad1: "Shangai",
-        capital: "Pekin",
-        ciudad2: "Wuhan"
-    },
-    {   
-        imagen:"../images/India.svg",
-        nombre: "India",
-        ciudad1: "Calcuta",
-        ciudad2: "Mumbai",
-        capital: "Delhi" 
-    },
-    {   
-        imagen: "../images/Japon.png",
-        nombre: "Japon",
-        ciudad1: "Osaka",
-        ciudad2: "Kioto",
-        capital: "Tokio"
-    },
-    {
-        imagen:"../images/Turquia.svg",
-        nombre: "Turquia",
-        ciudad1: "Estambul",
-        ciudad2: "Bursa",
-        capital: "Ankara"
-    },
-    {
-        imagen:"../images/Iraq.png",
-        nombre: "Iraq",
-        capital: "Bagdad",
-        ciudad1: "Erbil",
-        ciudad2: "Mosul"
-    },
-    {
-        imagen:"../images/Israel.jpg",
-        nombre: "Israel",
-        ciudad1: "Tel Aviv",
-        capital: "Jerusalen",
-        ciudad2: "Haifa"
-    },
-    {
-        imagen: "../images/Qatar.svg",
-        nombre: "Qatar",
-        ciudad1: "Dukhan",
-        capital: "Doha",
-        ciudad2: "Al-Wakrah"
-    },
-    {
-        imagen:"../images/Corea-del-norte.png",
-        nombre: "Corea Del Norte",
-        ciudad1: "Sinuiju",
-        ciudad2: "Kaesŏng",
-        capital: "Pyongyang"
-    },
-    {
-        imagen:"../images/Siria.svg",
-        nombre: "Siria",
-        capital: "Damasco",
-        ciudad1: "Alepo",
-        ciudad2: "Homs"
+        agregarPaises();
+        respuestasContinente();
+
+    } catch (error) {
+
+        console.error("Error al cargar el archivo JSON:", error.message);
     }
-    
-]
+}
+
+cargarDatos();
 
 function agregarPaises () {
 
@@ -190,9 +137,6 @@ function agregarPaises () {
     });
 }
 
-agregarPaises();
-
-
 function respuestasContinente () {
 
     let botonesCorrectosAsia = localStorage.getItem("botonesCorrectosAsia");
@@ -297,14 +241,17 @@ function respuestasContinente () {
         
             if (parseInt(respuestasTotalesAsia)===10) {
 
-                let puntajeAsia = document.createElement("div");
-                puntajeAsia.classList.add("puntajeAsia");
+                Swal.fire( {
+                    
+                    title: `Conseguiste ${respuestasCorrectasAsia} respuestas correctas`,
+                    imageUrl: "/src/assets/images/imagenPuntaje.png",
+                    background: "transparent",
+                    color: "#BFBFBF",
+                    confirmButtonText:"Continuar",
+                    confirmButtonColor:"gray",
+                    backdrop: `rgba(0, 0, 0, 0.9)`
 
-                let mensaje = document.createElement("p");
-                mensaje.textContent = `Tu resultado es de ${respuestasCorrectasAsia} respuestas correctas`;
-
-                puntajeAsia.appendChild(mensaje);
-                cardsAsia.appendChild(puntajeAsia);
+                });
 
                 localStorage.removeItem("botonesCorrectosAsia");
                 localStorage.removeItem("botonesIncorrectosAsia");
@@ -316,19 +263,5 @@ function respuestasContinente () {
     })
 }
 
-respuestasContinente();
-
-const titulo = "Asia";
-let index = 0 ;
-
-function mostrarLetras () {
-
-    if (index < titulo.length) {
-
-        document.getElementById("asia").textContent += titulo[index];
-        index++;
-        setTimeout(mostrarLetras,100)
-    }
-}
-
-mostrarLetras();
+mostrarLetras("Asia", "asia");
+recuperarUsuario();

@@ -1,79 +1,26 @@
+import { mostrarLetras } from "../funciones/mostrarLetras.js";
+import { recuperarUsuario } from "../funciones/recuperarUsuario.js";
+
 const cardsEuropa = document.getElementById("cardsEuropa")
 
-const paisesEuropa = [
+let paisesEuropa = [];
+
+async function cargarDatos() {
+
+    try {
+        const response = await fetch("/src/data/continenteEuropa.json");
+        paisesEuropa = await response.json();
     
-    {
-        imagen: "../images/Alemania.png",
-        nombre: "Alemania",
-        capital: "Berlin",
-        ciudad1: "Munich",
-        ciudad2: "Hamburgo"
-    },
-    {   
-        imagen: "../images/Francia.svg",
-        nombre: "Francia",
-        ciudad1: "Marsella",
-        capital: "Paris",
-        ciudad2: "Lyon"
-    },
-    {   
-        imagen:"../images/Paises-Bajos.svg",
-        nombre: "Paises Bajos",
-        capital: "Amsterdam",
-        ciudad1: "Roterdam",
-        ciudad2: "Utrecht"
-    },
-    {   
-        imagen:"../images/Portugal.webp",
-        nombre: "Portugal",
-        ciudad1: "Braga",
-        capital: "Lisboa",
-        ciudad2: "Oporto"
-    },
-    {
-        imagen:"../images/Italia.png",
-        nombre: "Italia",
-        ciudad1: "Napoles",
-        ciudad2: "Milan",
-        capital: "Roma"
-    },
-    {
-        imagen: "../images/España.png",
-        nombre: "España",
-        ciudad1: "Barcelona",
-        ciudad2: "Valencia",
-        capital: "Madrid"
-    },
-    {
-        imagen:"../images/Belgica.png",
-        nombre: "Belgica",
-        ciudad1: "Amberes",
-        ciudad2: "Brujas",
-        capital: "Bruselas"
-    },
-    {
-        imagen: "../images/Noruega.webp",
-        nombre: "Noruega",
-        ciudad1: "Trondheim",
-        capital: "Oslo",
-        ciudad2: "Tromsø"
-    },
-    {
-        imagen:"../images/Polonia.png",
-        nombre: "Polonia",
-        capital: "Varsovia",
-        ciudad1: "Cracovia",
-        ciudad2: "Wroclaw"
-    },
-    {
-        imagen:"../images/Bulgaria.svg",
-        nombre: "Bulgaria",
-        ciudad1: "Plovdiv",
-        ciudad2: "Varna",
-        capital: "Sofia"
+        agregarPaises();
+        respuestasContinente();
+
+    } catch (error) {
+
+        console.error("Error al cargar el archivo JSON:", error.message);
     }
-    
-]
+}
+
+cargarDatos();
 
 function agregarPaises () {
 
@@ -190,9 +137,6 @@ function agregarPaises () {
     });
 }
 
-agregarPaises();
-
-
 function respuestasContinente () {
 
     let botonesCorrectosEuropa = localStorage.getItem("botonesCorrectosEuropa");
@@ -297,14 +241,17 @@ function respuestasContinente () {
         
             if (parseInt(respuestasTotalesEuropa)===10) {
 
-                let puntajeEuropa = document.createElement("div");
-                puntajeEuropa.classList.add("puntajeEuropa");
+                Swal.fire( {
+                    
+                    title: `Conseguiste ${respuestasCorrectasEuropa} respuestas correctas`,
+                    imageUrl: "/src/assets/images/imagenPuntaje.png",
+                    background: "transparent",
+                    color: "#BFBFBF",
+                    confirmButtonText:"Continuar",
+                    confirmButtonColor:"gray",
+                    backdrop: `rgba(0, 0, 0, 0.9)`
 
-                let mensaje = document.createElement("p");
-                mensaje.textContent = `Tu resultado es de ${respuestasCorrectasEuropa} respuestas correctas`;
-
-                puntajeEuropa.appendChild(mensaje);
-                cardsEuropa.appendChild(puntajeEuropa);
+                });
 
                 localStorage.removeItem("botonesCorrectosEuropa");
                 localStorage.removeItem("botonesIncorrectosEuropa");
@@ -316,19 +263,5 @@ function respuestasContinente () {
     })
 }
 
-respuestasContinente();
-
-const titulo = "Europa";
-let index = 0 ;
-
-function mostrarLetras () {
-
-    if (index < titulo.length) {
-
-        document.getElementById("europa").textContent += titulo[index];
-        index++;
-        setTimeout(mostrarLetras,100)
-    }
-}
-
-mostrarLetras();
+mostrarLetras("Europa", "europa");
+recuperarUsuario();

@@ -1,0 +1,74 @@
+#america {
+
+    cursor: pointer;
+}
+#europa, #asia {
+
+    cursor: not-allowed;
+}
+.continentes {
+
+    @include flexCentrado (flex,center,top);
+    box-shadow: 2px 2px 10px #7A1E1E,
+                2px 2px 15px #7A1E1E,
+                2px 2px 25px #7A1E1E,
+                2px 2px 35px #7A1E1E;
+    border-radius: 50%;
+    width: 100%;
+    height: 32vw;
+}
+.americaFondo {
+    
+    background-image: url("/src/assets/images/ContinenteAmericano.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.europaFondo {
+    
+    background-image: url("/src/assets/images/ContinenteEuropeo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.asiaFondo {
+    
+    background-image: url("/src/assets/images/ContinenteAsiatico.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#botoneraMain {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 10px;
+}
+.botonesMain {
+    
+    @include fuente (Barrio,24px);;
+    font-weight: 500;
+    height: 60px;
+    width: 150px;
+    padding: 5px 10px;
+    margin-top: 45px;
+    background: linear-gradient(45deg,$color1,$color4);
+    color: $color5;
+    border: 2px solid $color4;
+    box-shadow: 2px 2px 10px rgba(0, 0, 50, 0.8),
+                2px 2px 15px rgba(0, 0, 50, 0.8),
+                2px 2px 25px rgba(0, 0, 50, 0.8);
+    border-radius: 5px;
+}
+.botonesMain:hover {
+
+    transform: scale(1.2);
+}
+
+
+.lista-reglas {
+
+    text-align: left;
+    font-family: "poppins", serif;
+}

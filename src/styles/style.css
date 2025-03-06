@@ -1,0 +1,423 @@
+@font-face {
+  font-family: "Barrio";
+  src: url("/src/assets/fonts/Barrio-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+#america {
+  cursor: pointer;
+}
+
+#europa, #asia {
+  cursor: not-allowed;
+}
+
+.continentes {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  box-shadow: 2px 2px 10px #7A1E1E, 2px 2px 15px #7A1E1E, 2px 2px 25px #7A1E1E, 2px 2px 35px #7A1E1E;
+  border-radius: 50%;
+  width: 100%;
+  height: 32vw;
+}
+
+.americaFondo {
+  background-image: url("/src/assets/images/ContinenteAmericano.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.europaFondo {
+  background-image: url("/src/assets/images/ContinenteEuropeo.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.asiaFondo {
+  background-image: url("/src/assets/images/ContinenteAsiatico.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#botoneraMain {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 10px;
+}
+
+.botonesMain {
+  font-family: Barrio;
+  font-size: 24px;
+  font-weight: 500;
+  height: 60px;
+  width: 150px;
+  padding: 5px 10px;
+  margin-top: 45px;
+  background: linear-gradient(45deg, #FAF3E0, #D5B19D);
+  color: #7A1E1E;
+  border: 2px solid #D5B19D;
+  box-shadow: 2px 2px 10px rgba(0, 0, 50, 0.8), 2px 2px 15px rgba(0, 0, 50, 0.8), 2px 2px 25px rgba(0, 0, 50, 0.8);
+  border-radius: 5px;
+}
+
+.botonesMain:hover {
+  transform: scale(1.2);
+}
+
+.lista-reglas {
+  text-align: left;
+  font-family: "poppins", serif;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.casilla1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#ingresarNombre {
+  font-family: poppins;
+  font-size: 18px;
+  padding: 5px;
+  border: 2px solid #7A1E1E;
+  border-radius: 5px;
+}
+
+#guardarNombre {
+  padding: 7px 14px;
+  background-color: #7A1E1E;
+  color: #FAF3E0;
+  border-radius: 26px 58px;
+  border: 2px solid #FAF3E0;
+  cursor: pointer;
+  font-family: poppins;
+  font-size: 18px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 50, 0.8), 2px 2px 10px rgba(0, 0, 50, 0.8), 2px 2px 15px rgba(0, 0, 50, 0.8);
+}
+
+#guardarNombre:hover {
+  transform: scale(1.1);
+  transition: 1.4 ease;
+}
+
+.div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+#nombreJugador {
+  font-family: Barrio;
+  font-size: 1.5rem;
+  color: #7A1E1E;
+}
+
+.player {
+  padding: 5px 10px;
+  box-shadow: 2px 2px 4px #7A1E1E, 1px 1px 8px #7A1E1E, 0px 0px 12px #7A1E1E;
+  border: 2px solid #7A1E1E;
+  font-family: poppins;
+  font-size: 1rem;
+  color: #7A1E1E;
+  border-radius: 5px;
+}
+
+.tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Barrio;
+  font-size: 40px;
+  color: #7A1E1E;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.casilla3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#reglamento {
+  padding: 10px 20px;
+  background-color: #7A1E1E;
+  color: #F1E0C6;
+  border: 2px solid #E0C097;
+  border-radius: 26px 58px;
+  cursor: pointer;
+  font-family: poppins;
+  font-size: 18px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 50, 0.8), 2px 2px 10px rgba(0, 0, 50, 0.8), 2px 2px 15px rgba(0, 0, 50, 0.8);
+}
+
+#reglamento:hover {
+  transform: scale(1.1);
+  transition: 1.4 ease;
+}
+
+body {
+  background: linear-gradient(45deg, #FAF3E0, #E0C097);
+}
+
+.dark {
+  background: linear-gradient(45deg, #1A1A1A, #000);
+  color: #F1E0C6;
+}
+
+.botonModoClaro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #7A1E1E, rgba(248, 106, 106, 0.753));
+  box-shadow: 0 0 6px rgba(248, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5);
+  border: 2px solid #FFD700;
+  cursor: pointer;
+  font-size: 35px;
+  border-radius: 50%;
+}
+
+.botonModoClaro:hover {
+  transform: scale(1.1);
+}
+
+.botonModoOscuro {
+  background: linear-gradient(45deg, #0401c9, rgba(5, 134, 209, 0.753));
+  box-shadow: 0 0 6px rgba(3, 146, 241, 0.7), 0 0 10px rgba(3, 98, 223, 0.5);
+  border: 2px solid #F1E0C6;
+}
+
+#cardsAmerica, #cardsEuropa, #cardsAsia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.bodyCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 5px;
+  width: 40%;
+  height: 300px;
+  gap: 5px;
+  margin: 5px;
+  background-color: #FAF3E0;
+  color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.titleCard {
+  background: linear-gradient(45deg, #FAF3E0, #D5B19D);
+  color: #7A1E1E;
+  font-family: Barrio;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+  border: 2px solid #D5B19D;
+  justify-items: center;
+}
+
+.boton1, .boton2, .boton3 {
+  background-color: #F1E0C6;
+  color: black;
+  font-family: poppins;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+  border: 2px solid #D5B19D;
+  cursor: pointer;
+}
+
+.boton1:hover, .boton2:hover, .boton3:hover {
+  transform: scale(1.1);
+  transition: 1.4 ease;
+  background-color: #D5B19D;
+  color: #7A1E1E;
+}
+
+.botonCorrecto {
+  background-color: green;
+  color: #FAF3E0;
+  font-family: poppins;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+}
+
+.botonIncorrecto {
+  background-color: red;
+  color: #FAF3E0;
+  font-family: poppins;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+}
+
+.botonAgregado {
+  background-color: #FAF3E0;
+  color: gray;
+  font-family: poppins;
+  font-size: 14px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+}
+
+.botonesTransparentes {
+  opacity: 0.7;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7A1E1E;
+  height: 90px;
+  margin-top: 50px;
+}
+
+.final {
+  background-color: #7A1E1E;
+  justify-items: center;
+}
+
+.final p {
+  font-family: poppins;
+  font-size: 24px;
+  color: #D5B19D;
+}
+
+@media (max-width: 768px) {
+  main {
+    justify-content: center;
+  }
+  #botoneraMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .continentes {
+    width: 60%;
+    height: 58vw;
+  }
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    margin-left: 5px;
+  }
+  .casilla1 {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .casilla3 {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .botonModoClaro {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+    margin: 0 15px;
+    border: 1px solid #FFD700;
+  }
+  .botonModoOscuro {
+    border: 1px solid #F1E0C6;
+  }
+  .footer {
+    height: 60px;
+  }
+  .final p {
+    font-size: 1rem;
+  }
+  .botonesMain {
+    height: 50px;
+    width: 100px;
+    font-size: 1.3rem;
+  }
+  #reglamento {
+    padding: 8px 16px;
+    border: 1px solid #E0C097;
+    font-size: 16px;
+  }
+  #cardsAmerica, #cardsEuropa, #cardsAsia {
+    flex-direction: column;
+  }
+  .bodyCard {
+    width: 90%;
+    height: 250px;
+  }
+  .titleCard {
+    padding: 2px;
+    width: 180px;
+  }
+  .boton1, .boton2, .boton3, .botonCorrecto, .botonIncorrecto, .botonAgregado {
+    font-family: poppins;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 6px;
+    width: 180px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

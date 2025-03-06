@@ -1,0 +1,74 @@
+[
+    
+    {
+        "imagen": "../src/assets/images/Corea-del-sur.webp",
+        "nombre": "Corea Del Sur",
+        "capital": "Seul",
+        "ciudad1": "Daegu",
+        "ciudad2": "Busan"
+    },
+    {   
+        "imagen": "../src/assets/images/China.png",
+        "nombre": "China",
+        "ciudad1": "Shangai",
+        "capital": "Pekin",
+        "ciudad2": "Wuhan"
+    },
+    {   
+        "imagen":"../src/assets/images/India.svg",
+        "nombre": "India",
+        "ciudad1": "Calcuta",
+        "ciudad2": "Mumbai",
+        "capital": "Delhi" 
+    },
+    {   
+        "imagen": "../src/assets/images/Japon.png",
+        "nombre": "Japon",
+        "ciudad1": "Osaka",
+        "ciudad2": "Kioto",
+        "capital": "Tokio"
+    },
+    {
+        "imagen":"../src/assets/images/Turquia.svg",
+        "nombre": "Turquia",
+        "ciudad1": "Estambul",
+        "ciudad2": "Bursa",
+        "capital": "Ankara"
+    },
+    {
+        "imagen":"../src/assets/images/Iraq.png",
+        "nombre": "Iraq",
+        "capital": "Bagdad",
+        "ciudad1": "Erbil",
+        "ciudad2": "Mosul"
+    },
+    {
+        "imagen":"../src/assets/images/Israel.jpg",
+        "nombre": "Israel",
+        "ciudad1": "Tel Aviv",
+        "capital": "Jerusalen",
+        "ciudad2": "Haifa"
+    },
+    {
+        "imagen": "../src/assets/images/Qatar.svg",
+        "nombre": "Qatar",
+        "ciudad1": "Dukhan",
+        "capital": "Doha",
+        "ciudad2": "Al-Wakrah"
+    },
+    {
+        "imagen":"../src/assets/images/Corea-del-norte.png",
+        "nombre": "Corea Del Norte",
+        "ciudad1": "Sinuiju",
+        "ciudad2": "Kaesŏng",
+        "capital": "Pyongyang"
+    },
+    {
+        "imagen":"../src/assets/images/Siria.svg",
+        "nombre": "Siria",
+        "capital": "Damasco",
+        "ciudad1": "Alepo",
+        "ciudad2": "Homs"
+    }
+    
+]
