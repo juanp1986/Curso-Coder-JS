@@ -10,17 +10,17 @@ let Asia = document.getElementById("asia");
 
 America.addEventListener("click", function(){
     
-    window.open ("../public/america.html", "_blank");
+    window.open ("/Curso-Coder-JS/public/america.html", "_blank");
 });
 
 Europa.addEventListener("click", function(){
 
-    window.open ("../public/europa.html", "_blank");
+    window.open ("/Curso-Coder-JS/public/europa.html", "_blank");
 });
 
 Asia.addEventListener("click", function(){
 
-    window.open ("../public/asia.html", "_blank");
+    window.open ("/Curso-Coder-JS/public/asia.html", "_blank");
 });
 
 mostrarLetras("Juego De Capitales", "juegoDeCapitales");
