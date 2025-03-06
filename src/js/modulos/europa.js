@@ -8,7 +8,7 @@ let paisesEuropa = [];
 async function cargarDatos() {
 
     try {
-        const response = await fetch("/src/data/continenteEuropa.json");
+        const response = await fetch("/Curso-Coder-JS/src/data/continenteEuropa.json");
         paisesEuropa = await response.json();
     
         agregarPaises();
