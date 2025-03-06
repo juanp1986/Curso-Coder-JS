@@ -33,7 +33,7 @@ export function desbloquearContinentes (respuestasCorrectasContinente, continent
                 Swal.fire( {
                     
                     title: "Nuevo continente desbloqueado",
-                    imageUrl: "/src/assets/images/thumbs-up.gif",
+                    imageUrl: "/Curso-Coder-JS/src/assets/images/thumbs-up.gif",
                     imageHeight:"500",
                     background: "transparent",
                     color: "#BFBFBF",
